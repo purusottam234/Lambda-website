@@ -34,14 +34,7 @@
                             <div class="col-lg-12 sidebar-widget-area sidebar-break-md">
                                 <div class="widget widget-box-padding widget-search">
                                     <h3 class="widget-title">Search</h3>
-                                    <!-- <div class="input-group stylish-input-group">
-                                        <input type="text" class="form-control" placeholder="What are you looking For?">
-                                         
-                                            <button type="submit" value="submit">
-                                                
-                                            </button>
-                                        </span>
-                                    </div> -->
+                                     
 
                                     <form action="{% url 'searchposts' %}" method="GET" value="{{request.GET.q}}">Search <input type="text" name="q" value="{{request.GET.q}}" placeholder="Search posts"/>
                                         <input type="submit" name="submit" value="Search"/>

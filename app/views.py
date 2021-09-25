@@ -19,8 +19,10 @@ def home(request):
     if fs:
         print(fs)
 
-    context = {"fs":fs, "posts":posts,"ts":ts}
+    context = {"fs":fs, "posts":posts,'ts':ts}
     return render(request, "index.html", context)
+
+ 
 
 
 
