@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% load static %}
  
@@ -47,7 +48,9 @@
                                         
                                         {% for result in results %}
                                         <div>
-                                        
+                                             
+                                        <img style="height: 200px; width: 200px;" src="{{ result.image.url }}" alt="" />
+
                                         <p>{{ result.listing_title }}</p>
                                         <br/>
                                         
